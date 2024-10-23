@@ -1,0 +1,18 @@
+// when running code on vscode you use the following command
+
+
+g++ -o output main.cpp      ****
+
+
+// "output" is the placeholder name for the file that will be created
+// "main.cpp" is the name of the program you want to run
+
+
+// then once the file is executed you can use 
+
+
+./output                    ****
+
+
+// "output" is the same name you entered previously, it just executes the actual file
+// and you will have an environment just like onlinegdb

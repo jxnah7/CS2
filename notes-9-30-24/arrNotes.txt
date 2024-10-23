@@ -1,0 +1,32 @@
+exArr[3] = (___  ___   ___)
+             0    1     2
+
+// numItems: 0, capacity: 3
+exArr[0] = 5;
+numItems++;
+
+// numItems: 1, capacity: 3
+exArr[1] = 10;
+numItems++;
+
+// numItems: 2, capacity: 3
+exArr[0] = 15;
+numItems++;
+
+// numItems: 3, capacity: 3
+// ERROR
+
+// stack is first in last out array 
+5 10 15
+
+removing an item starts with the last item added
+5 10 x  <---- remove last
+
+when we declared our array what values did it contain?
+exArr[3] <-- what are the values?
+// just garbage 
+
+what if we jsut decrease the numItems?
+
+// numItwms: 2, capacity 3
+5 10 15
