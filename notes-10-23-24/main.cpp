@@ -26,19 +26,52 @@ int main(){
   (tail->next)->prev = tail;
   tail = tail->next;
 
+  DNode *dontPrint;
+
   for (int i = 0; i > 19; i++){
     x = rand() % 101;
     tail->next = new DNode;
     (tail->next)->prev = tail;
     tail = tail->next;
+    if (i == 1){
+      dontPrint = tail->prev;
+    }
   }
 
   //declare a temp pointer
   //use a loop to print everything in the list
   DNode *temp;
   //initialize
-  while (CONTINUE){
-     
+  while (temp != nullptr){
+     cout << temp->data << " ";
+     //update
+     temp = temp->next;
+  }
+  //fliter by value
+  //use a loop to print the entire list
+    // but skip any values above 50 ()
+
+  while (temp != nullptr){
+    if (temp->data > 50){
+      cout << "skip";
+    }
+    else{
+      cout << temp->data << " ";
+    }
+  }
+  cout << endl;
+
+  //filter this list by address
+  //if the node location is dontPrint, print skip
+  //else print the value
+
+  while (temp != nullptr){
+    if(temp == dontPrint){
+    cout << "skip";
+    }
+    else{
+      cout << temp->data
+    }
   }
 
 
