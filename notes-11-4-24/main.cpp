@@ -60,3 +60,26 @@ int rFunc(int a, int b){
     return 1 + rFunc(a-1, b);
   }
 }
+
+
+class Node{
+  public:
+    int data;
+    Node *next;
+};
+
+void printListR(Node *head){
+  if (head == nullptr){
+    cout << endl;
+    return;
+  }
+  else {
+    cout << head->data << " ";
+
+    printListR(head->next);
+  }
+}
+
+// define a recursive function to determine if a value is in  an array 
+// inpute: array of integers, size of array, statr index, target value
+// output: true if target is in the array, false if it is not.
