@@ -9,17 +9,6 @@ using namespace std;
 // sum of all numbers in the array from the starting index
 
 
-
-int skibidi(int arr[], int size, int start){
-  int sum = 0;
-  for (int i = start; i < size; i++){
-    sum += arr[i];
-  }
-  return sum;
-}
-
-
-
 int main(){
   const int SIZE = 4;
   int arr[10];
@@ -29,6 +18,18 @@ int main(){
   }
   cout << skibidi(arr, SIZE, 0) << endl;
   cout << recurArr(arr, SIZE, 0) << endl;
+
+  return 0;
+}
+
+
+
+int skibidi(int arr[], int size, int start){
+  int sum = 0;
+  for (int i = start; i < size; i++){
+    sum += arr[i];
+  }
+  return sum;
 }
 
 
@@ -47,4 +48,15 @@ int recurArr (int arr[], int size, int start){
   // for decreasing size...
   // return arr[size - 1] + recurArr(arr, size-1, start);
 
+}
+
+// WHAT IS THE OUTPUT WHEN WE CALL THE FUNCTION rFUNC(3, 5)
+
+int rFunc(int a, int b){
+  if (a <= 0 || b <= 0){
+    return a + b;
+  }
+  else {
+    return 1 + rFunc(a-1, b);
+  }
 }

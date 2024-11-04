@@ -1,0 +1,11 @@
+arr[4] = {3, 6, 7, 5}           // BASE CASE    start >= size ==> 0
+sumArrR(arr, 4, 0)              // RECUR CASE   arr[start] + recurArr(arr, size, start[+1])
+
+return arr[0] + sumArrR(arr, 4, 0+1)
+
+        return arr[0] + sumArrR(arr, 4, 1+1)
+
+                return arr[0] + sumArrR(arr, 4, 2+1)
+
+                          return arr[0] + sumArrR(arr, 4, 3+1)
+
