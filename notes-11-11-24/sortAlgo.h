@@ -35,9 +35,35 @@ using namespace std;
   // we go through the loop n times, n amount of times
   // therefore O(n^2)
 
-  void bubbleSortIteration(int arr[], int length){
+  void printArr(int arr[], int length){
 
   }
-  void bubbleSort(int arr[], int length){
 
+  void swap(int arr[], int index1 , int index2){
+    int temp = arr[index2];  // copy second numnber
+    arr[index2] = arr[index1];  // copy first number onto the first index
+    arr[index1] = temp; // copy the second number onto first index
+  }
+
+  void bubbleSortIteration(int arr[], int length){
+    int i = 0;  // start at 0 for first index, then use i+1 for second index
+    while(i+1 < length){
+      if(arr[i] < arr[i+1]){}
+      else{
+        swap(arr, i, i+1);
+      }
+      i++;  // move over to the next index
+    }
+  }
+
+  // this guarentees that the length number will be sorted
+  void bubbleSort(int arr[], int length){
+    // repeat iteration length-1  times
+    cout << "original array: ";
+    printArr(arr, length);
+    for(int i - 0; i < length; i++){
+      bubbleSortIteration(arr, length);
+      cout << "after " << i << " iterations: ";
+      printArr(arr, length);
+    }
   }
