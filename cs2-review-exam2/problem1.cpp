@@ -3,7 +3,7 @@
 #include <iostream>
 int main(){
 
-  int x;  // declare x
+  int x;                     // declare x
   int y;  // declare y;
   int *p; // declare pointer p
 
