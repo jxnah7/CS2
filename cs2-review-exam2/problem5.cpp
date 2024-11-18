@@ -71,5 +71,11 @@ here!
     4. delete second // free up that memory we allocated
     
   To concatinate two Lists:
+    connect last node of first list to the first node of the second list
+    super simple just tail->next = head (head of second list)
+    if it was a doubly list then set head-prev of second list to tail in first list
+
   To split a list into two (given point):
+    to split we just disconnect the joinings so
+    set tail-next = nullptr and then set head-prev = nullptr if it was a doubly
 */
