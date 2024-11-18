@@ -1,22 +1,11 @@
-// Linked List
-  // Assume you have a linked list of strings. Write a function 
-  // which will take in as input the pointer to the head node 
-  // and will print all strings in the list
-#include <iostream>
-#include <string>
+// STACKS
 
-using namespace std;
+/*
 
-class listNode{ // create class node
-  public:
-    string value; // takes string values
-    listNode *next; // creates node pointer *next
-};
+Assume you are given a setup for a stack (with a dynamic array). Be prepared to be able
+to either explain (in plain language) and/or implement the following:
+a. Push new items into the stack
+b. “pop” or remove items from the stack
+c. Resize the stack if needed
 
-void printLinkedList(listNode *head){ // void function with head node declared
-  listNode *current = head; // current node starts at head
-  while(current != nullptr) { // while current node is not null
-    std::cout << current->value << std::endl; // print current node value
-    current = current->next;  // jump to next node
-  }
-}
+*/
