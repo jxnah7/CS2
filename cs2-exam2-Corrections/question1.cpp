@@ -6,5 +6,7 @@ QUESTION: What line of code assigns a char variable outputGames with the value o
 char userGames = 'B';
 char *gamesPointer;
 
-ANS: outputGames = *gamesPointer;
+ANSWER: outputGames = *gamesPointer;
+
+EXPLANATION: using * dereferences the pointer and accesses the value
 */

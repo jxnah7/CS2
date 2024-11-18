@@ -12,4 +12,6 @@ Sample *sample1 = new Sample;
 }
 
 ANSWER: (sample1)->show_data();
+
+EXPLANATION: The -> dereferences a pointer and accesses a member of an object it points to 
 */
