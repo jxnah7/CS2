@@ -3,6 +3,12 @@ using namespace std;
 
 #include "Event.h";
 
+
+// define a recursive function that will print out the time and location
+// all events in an array of events
+// if the events do not have clowns.
+
+
 int main(){
   // delcare a pointer variable that can hold an address of an empty integer
   int *ptrI;
@@ -23,5 +29,22 @@ int main(){
   // use p42 to access location and set to circus
   p42->location = "circus"; // this arrow operation dereference and access the object location
 
+  // increase the size of ptrE array by 10 (increase capacity to 110)
+
+  // 1. make a copy of the pointer to the old array
+  event *ptrOLD = ptrE;
+  // 2. use ptrE to make larger array which is blank
+  ptrE = new event[100];
+  // 3. use a loop to copy each item
+  for(int i = 0; i < 100; i++){
+    ptrE[i] = ptrOLD[i];
+  }
+  // 4. delete the old one
+  delete [] ptrOLD;
+  // after your code you shuold have 
+    // ptrE which has array of 110 event objects
+
+
+// our first     
   
 }
