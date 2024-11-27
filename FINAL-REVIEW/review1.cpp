@@ -14,13 +14,17 @@ void printRecur(event arr[], int length){
   if(length == 0){
     return;
   }
-}
+
   // recursive case
     // call function to do the steps
-    
-    cout << arr[i] - 1;
-    return printRecur(length -1) + printRecur(arr[i-1]);
-
+  else{
+    // does this event have clowns?
+    if(arr[length-1].hasClowns != true){
+      cout << arr[length -1].time << " " << arr[length-1].location << endl;
+    }
+    printRecur(arr, length -1);
+  }
+}
 
 int main(){
   // delcare a pointer variable that can hold an address of an empty integer
