@@ -1,0 +1,32 @@
+bubble sort is the fun one
+it swaps the first two then compares if its larger
+if it is then swap
+if it isnt then move to next one
+this is great to get the largst number to the back 
+ensuring atleast 1 element is correctly placed
+
+List: [5, 3, 8, 4]
+
+    Compare 5 and 3: Swap → [3, 5, 8, 4]
+    Compare 5 and 8: No Swap → [3, 5, 8, 4]
+    Compare 8 and 4: Swap → [3, 5, 4, 8]
+
+At the end of 1 iteration, the largest value (8) 
+is in its correct position.
+
+
+
+
+selection sort is pretty picky
+so they only wanna select the smallest (or largest)
+number in  a list , then carefull place it at the beginning
+this ensures the very beginning is correctly placed
+
+List: [5, 3, 8, 4]
+
+    Find the minimum in [5, 3, 8, 4]: Minimum is 3.
+    Swap 3 with the first element: [3, 5, 8, 4].
+
+At the end of 1 iteration, the smallest value (3) 
+is placed in its correct position.
+
