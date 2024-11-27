@@ -1,0 +1,9 @@
+all coding challenges
+
+1 on linkedlists
+1 on recursion
+1 on Binary search tree
+
+5 coding questions total
+
+final worth %15 of grade
