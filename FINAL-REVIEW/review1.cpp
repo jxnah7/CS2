@@ -8,6 +8,19 @@ using namespace std;
 // all events in an array of events
 // if the events do not have clowns.
 
+void printRecur(event arr[], int length){
+  // base case
+    // based on length
+  if(length == 0){
+    return;
+  }
+}
+  // recursive case
+    // call function to do the steps
+    
+    cout << arr[i] - 1;
+    return printRecur(length -1) + printRecur(arr[i-1]);
+
 
 int main(){
   // delcare a pointer variable that can hold an address of an empty integer
