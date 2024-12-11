@@ -1,0 +1,15 @@
+TASKL Build a tree from a list of values
+
+list(9) = {0, 114, 16, 2, -6, 1, 10, 4, 5}
+
+1. Start at the "root" node of the tree
+2. Check if the current node is null (is there anything there)
+  --YES: Put the number here (DONE)
+  --NO: (there is a node here already)
+  3. Check if the value we want to insert is greater than or less than
+     current value
+  --GREATER: move my current location to the right, and go back to step 2
+  --LESS: move my location to the left, and go back to step 2
+  --EQUAL: throw it away (DONE.)
+
+Practice: Insert all nodes of "list" in order that they are listed

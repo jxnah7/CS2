@@ -8,6 +8,7 @@ class Node{
     Node *next;
     Node *prev;
 };
+void printReverseR(Node *head);
 
 int main(){
   cout << "Im trying to make a linked list" << endl;
@@ -53,6 +54,8 @@ int main(){
     current = current->prev;
   }
 
+  cout << endl << endl;
+  printReverseR(head);
 
   delete head;
   delete first;
@@ -62,4 +65,12 @@ int main(){
   delete current;
   
   return 0;
+}
+
+void printReverseR(Node *head){
+  if (head == nullptr){
+    return;
+  }
+  printReverseR(head->next);
+  cout << head->data << " ";
 }
