@@ -8,9 +8,9 @@
 // for all attriubutes
 // default values for :
 // location : "home"
-// clowsn : "False"
+// clowns : "False"
 
-// every event needs a time to be created
+// however, every event needs a time to be created
 
 #include <iostream>
 #include <string>
@@ -23,7 +23,7 @@ class event{
     bool hasClowns;
 
 // added default to time for sake of practice in review1.cpp
-    event(string inTime = 100, string inLocation = "home", bool inHasClowns = false){
+    event(string inTime, string inLocation = "home", bool inHasClowns = false){
       time = inTime;
       location = inLocation;
       hasClowns = inHasClowns;
